@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Patryk Chamera</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the back button */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem; /* Spacing below button */
+            padding: 0.6rem 1.2rem;
+            background-color: var(--primary-accent); /* Using variables from main CSS */
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .back-link:hover {
+            background-color: var(--secondary-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+         /* Style for the main projects container */
+         .projects-container {
+             padding: 2rem 1.5rem; /* Adds inner padding */
+             width: 100%; /* Ensure it tries to use full available width */
+             max-width: 100%;
+         }
+         .projects-title {
+             text-align: center;
+             margin-bottom: 2.5rem;
+             font-size: 2.5rem; /* Larger page title */
+             color: var(--text-light);
+             border-bottom: 4px solid; /* Gradient underline */
+             border-image: linear-gradient(to right, var(--primary-accent), var(--secondary-accent)) 1;
+             padding-bottom: 0.8rem;
+         }
+          /* Additional style for better spacing between project cards */
+          .project-item.card {
+              margin-bottom: 2rem; /* Increased spacing between projects */
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="projects-container">
+             <a href="index.html" class="back-link">
+                &larr; Back to CV
+             </a>
+
+             <h1 class="projects-title">My Projects</h1>
+
+             <div class="project-item card">
+                <h3>Heart Failure Predictor Application</h3>
+                <p>
+                    A system featuring a Java Spring Boot web application for user interaction (registration, login, data submission, history view) and a Python Flask API serving a pre-trained Gradient Boosting Classifier model to predict heart failure risk based on diagnostic data. Leverages Spring Security, Spring Data JPA (MySQL), and Thymeleaf for the web app, with Scikit-learn and Flask powering the ML service.
+                    <br><strong>Technologies:</strong> Java, Spring Boot, Spring Security, JPA, MySQL, Thymeleaf, Python, Flask, Scikit-learn, Pandas.
+                </p>
+                <a href="https://github.com/xhamera1/heart-failure-predictor" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-item card">
+                <h3>TODO-Web-App</h3>
+                <p>
+                    A web application for task management (TODO list) created using the Spring Boot framework. Implements RESTful CRUD (Create, Read, Update, Delete) operations for efficient task management. Focuses on backend logic and API design.
+                    <br><strong>Technologies:</strong> Java, Spring Boot, REST API, (e.g., PostgreSQL, if used).
+                </p>
+                <a href="https://github.com/xhamera1/TODO-Web-App" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-item card">
+                <h3>Java Network Poker Game</h3>
+                <p>
+                    A networked version of the Five-Card Draw poker game implemented using Java Sockets. Features a Client/Server architecture, allowing multiple players to connect and play against each other over a network. Demonstrates understanding of network programming and basic game logic.
+                    <br><strong>Technologies:</strong> Java, Sockets (TCP/IP).
+                </p>
+                <a href="https://github.com/xhamera1/Poker-Game" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-item card">
+                <h3>Chubby Programming Language</h3>
+                <p>
+                   An ongoing collaborative project focused on developing a compiler for a custom programming language targeting the Java Virtual Machine (JVM). Utilizes Java and the ANTLR4 parser generator for lexical analysis and parsing. Explores concepts of compiler construction and language design. (Collaborative)
+                   <br><strong>Technologies:</strong> Java, ANTLR4, JVM.
+                </p>
+                <a href="https://github.com/karolbystrek/Chubby" target="_blank" rel="noopener noreferrer" class="project-link">
+                    View on GitHub
+                </a>
+            </div>
+
+            
+
+             </main>
+
+         <footer class="footer">
+             &copy; 2025 Patryk Chamera </footer>
+
+    </div>
+</body>
+</html>
