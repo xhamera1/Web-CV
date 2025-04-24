@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Patryk Chamera</title>
+    <title>Interactive CV - Patryk Chamera</title>
     <link rel="stylesheet" href="styles.css">
     </head>
 <body>
 
     <div class="container">
         <header class="header">
-            <img src="https://placehold.co/120x120/e2e8f0/334155?text=PC" alt="Photo of Patryk Chamera" class="profile-photo" onerror="this.onerror=null; this.src='https://placehold.co/120x120/e2e8f0/334155?text=Photo';">
+            <div class="profile-photo-wrapper">
+                <img src="https://placehold.co/120x120/e2e8f0/334155?text=PC" alt="Photo of Patryk Chamera" class="profile-photo" onerror="this.onerror=null; this.src='https://placehold.co/120x120/e2e8f0/334155?text=Photo';">
+            </div>
             <div class="header-text">
                 <h1>PATRYK CHAMERA</h1>
                 <p>Computer Science and Intelligent Systems Student | Aspiring Software Engineer</p>
@@ -46,23 +48,51 @@
                     <div class="skills-list">
                         <div class="skill-category">
                             <h4>Programming Languages:</h4>
-                            <p>Java, C#, Python, SQL, C++ (Basic), HTML/CSS (Basic)</p>
+                            <p>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">C++ (Basic)</span>
+                                <span class="skill-tag">HTML/CSS (Basic)</span>
+                            </p>
                         </div>
                         <div class="skill-category">
                             <h4>Frameworks & Libraries:</h4>
-                            <p>Spring Boot, .NET, JPA, JDBC, JUnit</p>
+                            <p>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">.NET</span>
+                                <span class="skill-tag">JPA</span>
+                                <span class="skill-tag">JDBC</span>
+                                <span class="skill-tag">JUnit</span>
+                             </p>
                         </div>
                         <div class="skill-category">
                             <h4>Databases:</h4>
-                            <p>PostgreSQL, MySQL</p>
+                            <p>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                             </p>
                         </div>
                         <div class="skill-category">
                             <h4>Tools & Environment:</h4>
-                            <p>Git, IntelliJ IDEA, VS Code, Linux, SonarQube</p>
+                            <p>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">IntelliJ IDEA</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">SonarQube</span>
+                            </p>
                         </div>
                         <div class="skill-category">
                             <h4>Key Concepts:</h4>
-                            <p>OOP, SOLID Principles, Data Structures & Algorithms, REST APIs</p>
+                             <p>
+                                <span class="skill-tag">OOP</span>
+                                <span class="skill-tag">SOLID</span>
+                                <span class="skill-tag">Data Structures</span>
+                                <span class="skill-tag">Algorithms</span>
+                                <span class="skill-tag">REST APIs</span>
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -84,16 +114,16 @@
             </aside>
 
             <main class="main-column">
-                <section class="main-section">
+                <section class="main-section card fade-in" id="summary">
                     <h2>SUMMARY</h2>
                     <p>
                         Highly motivated 2nd-year Computer Science and Intelligent Systems student at AGH University seeking a Software Engineering internship. Passionate about building reliable software using Java, Spring Boot, and PostgreSQL. Eager to apply academic knowledge to real-world projects, develop practical engineering skills, and contribute effectively as a team member.
                     </p>
                 </section>
 
-                <section class="main-section">
+                <section class="main-section fade-in" id="experience">
                     <h2>EXPERIENCE</h2>
-                    <div class="job">
+                    <div class="job card">
                         <div class="job-header">
                             <h3>Customer Service Representative (Helpline)</h3>
                             <span class="job-date">Summer 2023</span>
@@ -105,9 +135,9 @@
                     </div>
                 </section>
 
-                <section class="main-section">
+                <section class="main-section fade-in" id="education">
                     <h2>EDUCATION</h2>
-                    <div class="education-item">
+                    <div class="education-item card">
                          <div class="education-header">
                             <h3>AGH University of Science and Technology, Krakow</h3>
                             <span class="education-date">October 2023 – Present</span>
@@ -116,16 +146,16 @@
                     </div>
                 </section>
 
-                <section class="main-section">
+                <section class="main-section fade-in" id="courses">
                     <h2>COURSES & CERTIFICATIONS</h2>
-                    <div class="certification-item">
+                    <div class="certification-item card">
                         <h3>Amazon Junior Software Developer Certificate</h3>
                         <p class="certification-provider">Amazon, Coursera</p>
                         <p>
                            <span class="key-skills">Key skills:</span> Core software development skills in Java (OOP, data structures, algorithms), full-stack web development (Spring Boot), web application development, database management (SQL), application management.
                         </p>
                     </div>
-                     <div class="certification-item">
+                     <div class="certification-item card">
                         <h3>Full Stack Web Development</h3>
                         <p class="certification-provider">Amazon, Coursera</p>
                         <p>
@@ -134,33 +164,33 @@
                     </div>
                 </section>
 
-                <section class="main-section">
+                <section class="main-section fade-in" id="projects">
                     <h2>PROJECTS</h2>
-                    <div class="project-item">
+                    <div class="project-item card">
                         <h3>TODO-Web-App</h3>
                         <p>
                             Task management web app using Spring Boot, implementing RESTful CRUD operations.
                         </p>
                         <a href="https://github.com/xhamera1/TODO-Web-App" target="_blank" rel="noopener noreferrer" class="project-link">
-                            GitHub Repository
+                            View on GitHub
                         </a>
                     </div>
-                     <div class="project-item">
+                     <div class="project-item card">
                         <h3>Java Network Poker Game</h3>
                         <p>
                             Networked Five-Card Draw poker game using Java Sockets (Client/Server).
                         </p>
                         <a href="https://github.com/xhamera1/Poker-Game" target="_blank" rel="noopener noreferrer" class="project-link">
-                             GitHub Repository
+                            View on GitHub
                         </a>
                     </div>
-                     <div class="project-item">
+                     <div class="project-item card">
                         <h3>Chubby Programming Language</h3>
                         <p>
-                           Developing custom JVM language compiler (Java, ANTLR4) - (Ongoing, Collaborative).
+                            Developing custom JVM language compiler (Java, ANTLR4) - (Ongoing, Collaborative).
                         </p>
                         <a href="https://github.com/karolbystrek/Chubby" target="_blank" rel="noopener noreferrer" class="project-link">
-                             GitHub Repository
+                            View on GitHub
                         </a>
                     </div>
                 </section>
