@@ -323,6 +323,29 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 8px var(--glow-color);
 }
 
+/* Button link - same styling as project-link */
+.button-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    background-color: var(--primary-accent);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: var(--transition-fast);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-link:hover {
+    background-color: var(--secondary-accent);
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 8px var(--glow-color);
+}
+
 /* --- Footer --- */
 .footer {
     text-align: center;
