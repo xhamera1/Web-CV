@@ -1,4 +1,4 @@
 # Web-CV
-Interactive cv using azure static web app
+Interactive cv using github pages
 
-https://thankful-bay-05e320d03.6.azurestaticapps.net/
+https://xhamera1.github.io/Web-CV/index.html
