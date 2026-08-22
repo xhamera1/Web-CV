@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack / Web Projects - Patryk Chamera</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../projects.css">
+</head>
+<body>
+    <div class="container">
+        <main class="projects-page">
+            <div class="projects-back-row">
+                <a href="../projects.html" class="back-link">&larr; All Projects</a>
+                <a href="../index.html" class="back-link">&larr; Back to CV</a>
+            </div>
+
+            <header class="projects-hero">
+                <span id="category-page-badge" class="category-page-badge" hidden></span>
+                <h1 class="projects-title" id="projects-page-title">Full-Stack / Web Projects</h1>
+                <p class="projects-subtitle" id="projects-page-subtitle">Web applications, APIs, frontends, and full-stack systems.</p>
+            </header>
+
+            <section class="projects-section" aria-labelledby="browse-heading">
+                <div class="projects-section-header">
+                    <h2 id="browse-heading">Browse by Technology</h2>
+                    <p>Switch to another technology area or return to the full portfolio.</p>
+                </div>
+                <nav id="category-nav" class="category-nav-grid" aria-label="Project categories"></nav>
+            </section>
+
+            <section class="projects-section" id="all-projects-section" aria-labelledby="all-heading">
+                <div class="projects-section-header">
+                    <h2 id="all-heading">Projects in this category</h2>
+                    <p>
+                        Showing <span id="projects-visible-count" class="projects-count">0</span>
+                        projects
+                    </p>
+                </div>
+                <div id="filter-bar" class="filter-bar" role="toolbar" aria-label="Filter projects by technology"></div>
+                <div id="projects-all-grid" class="projects-grid"></div>
+                <p id="projects-no-results" class="no-results">No projects match this filter. Try another category.</p>
+            </section>
+        </main>
+
+        <footer class="footer">&copy; 2026 Patryk Chamera</footer>
+    </div>
+
+    <script src="../projects-data.js"></script>
+    <script src="../projects.js"></script>
+    <script>
+        initProjectsPage({
+            showFeatured: false,
+            defaultFilter: 'web',
+            hubPath: '../projects.html',
+            categoryPrefix: '',
+            pageTitle: 'Full-Stack / Web Projects',
+            pageSubtitle: 'Web applications, APIs, frontends, and full-stack systems.',
+            scrollOnFilter: false
+        });
+    </script>
+</body>
+</html>

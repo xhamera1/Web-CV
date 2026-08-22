@@ -5,174 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Patryk Chamera</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Style for the back button */
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem; /* Spacing below button */
-            padding: 0.6rem 1.2rem;
-            background-color: var(--primary-accent); /* Using variables from main CSS */
-            color: var(--text-light);
-            text-decoration: none;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            transition: var(--transition-fast);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        .back-link:hover {
-            background-color: var(--secondary-accent);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-         /* Style for the main projects container */
-         .projects-container {
-             padding: 2rem 1.5rem; /* Adds inner padding */
-             width: 100%; /* Ensure it tries to use full available width */
-             max-width: 100%;
-         }
-         .projects-title {
-             text-align: center;
-             margin-bottom: 2.5rem;
-             font-size: 2.5rem; /* Larger page title */
-             color: var(--text-light);
-             border-bottom: 4px solid; /* Gradient underline */
-             border-image: linear-gradient(to right, var(--primary-accent), var(--secondary-accent)) 1;
-             padding-bottom: 0.8rem;
-         }
-          /* Additional style for better spacing between project cards */
-          .project-item.card {
-              margin-bottom: 2rem; /* Increased spacing between projects */
-          }
-    </style>
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
     <div class="container">
-        <main class="projects-container">
-             <a href="index.html" class="back-link">
-                &larr; Back to CV
-             </a>
-
-             <h1 class="projects-title">My Projects</h1>
-
-
-             <div class="project-item card">
-                <h3>Diabetes Prediction: A Full-Stack Web Machine Learning Application</h3>
-                <p>
-                    A full-stack web application featuring a Random Forest classifier (97.2% accuracy) served via Python FastAPI, a secure Spring Boot backend with JWT authentication and role-based access control, and a modern React frontend. The system allows users to submit health metrics, receive AI-driven diabetes risk predictions, and track their prediction history, with admin capabilities for user management.
-                    <br><strong>Technologies:</strong> Python, FastAPI, Scikit-learn, Java, Spring Boot, Spring Security, Spring Data JPA, MySQL, React, TypeScript, Material-UI.
-                </p>
-                <a href="https://github.com/xhamera1/DiabetesPredictorApp" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
+        <main class="projects-page">
+            <div class="projects-back-row">
+                <a href="index.html" class="back-link">&larr; Back to CV</a>
             </div>
 
-             <div class="project-item card">
-                <h3>Intelligent Health Prediction System (Collaborative)</h3>
-                <p>
-                    An AI-powered web app using Spring Boot, React, and Python to predict health risks from user surveys and provide personalized recommendations. This is a university team project for the "Studio Projektowe 1" course. The application is an AI-powered system designed to predict health risks based on user-submitted medical surveys. It utilizes custom machine learning models and generative AI to provide personalized health recommendations.
-                    <br><strong>Technologies:</strong> Spring Boot, React, Python, Machine Learning, Generative AI.
+            <header class="projects-hero">
+                <h1 class="projects-title" id="projects-page-title">My Projects</h1>
+                <p class="projects-subtitle" id="projects-page-subtitle">
+                    A curated portfolio of full-stack applications, machine learning systems, and academic work.
+                    Browse highlighted projects below or filter the full collection by technology.
                 </p>
-                <a href="https://github.com/xhamera1/Intelligent-Health-Prediction-System" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
+            </header>
 
+            <section class="projects-section" aria-labelledby="browse-heading">
+                <div class="projects-section-header">
+                    <h2 id="browse-heading">Browse by Technology</h2>
+                    <p>Jump directly to a technology area — projects can appear in multiple groups.</p>
+                </div>
+                <nav id="category-nav" class="category-nav-grid" aria-label="Project categories"></nav>
+            </section>
 
-             <div class="project-item card">
-                <h3>Track & Trace System - Advanced Package Tracking Application (Collaborative)</h3>
-                <p>
-                    A full-stack web application for managing courier shipments with role-based access (User, Courier, Admin), real-time package tracking with history, geocoding integration, and REST API with API key authentication. Users can send and track packages, while couriers manage assigned deliveries with status and location updates.
-                    <br><strong>Technologies:</strong> C#, ASP.NET Core MVC, REST API, Entity Framework Core, MySQL, Bootstrap, Leaflet.js, Azure.
-                </p>
-                <a href="https://github.com/xhamera1/Track-And-Trace-App" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-             <div class="project-item card">
-                <h3>Heart Failure Predictor Application</h3>
-                <p>
-                    A system featuring a Java Spring Boot web application for user interaction (registration, login, data submission, history view) and a Python Flask API serving a pre-trained Gradient Boosting Classifier model to predict heart failure risk based on diagnostic data. Leverages Spring Security, Spring Data JPA (MySQL), and Thymeleaf for the web app, with Scikit-learn and Flask powering the ML service.
-                    <br><strong>Technologies:</strong> Java, Spring Boot, Spring Security, JPA, JUnit, MySQL, Thymeleaf, Python, Flask, Scikit-learn, Pandas.
-                </p>
-                <a href="https://github.com/xhamera1/heart-failure-predictor" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>TODO-Web-App</h3>
-                <p>
-                    A web application for task management (TODO list) created using the Spring Boot framework. Implements RESTful CRUD (Create, Read, Update, Delete) operations for efficient task management. Focuses on backend logic and API design.
-                    <br><strong>Technologies:</strong> Java, Spring Boot, REST API, JUnit, MySQL, Thymeleaf.
-                </p>
-                <a href="https://github.com/xhamera1/TODO-Web-App" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>SWIFT Code API</h3>
-                <p>
-                    A RESTful API service for managing and querying SWIFT/BIC (Bank Identifier Code) data. The application parses SWIFT code information from a CSV file during initialization, stores it in a MySQL database, and exposes endpoints to retrieve, add, and delete SWIFT code entries with comprehensive validation and error handling.
-                    <br><strong>Technologies:</strong> Java, Spring Boot, REST API, MySQL, Docker, Apache Commons CSV.
-                </p>
-                <a href="https://github.com/xhamera1/swift-code-api" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>Java Network Poker Game</h3>
-                <p>
-                    A networked version of the Five-Card Draw poker game implemented using Java Sockets. Features a Client/Server architecture, allowing multiple players to connect and play against each other over a network. Demonstrates understanding of network programming and basic game logic.
-                    <br><strong>Technologies:</strong> Java, Sockets (TCP/IP).
-                </p>
-                <a href="https://github.com/xhamera1/Poker-Game" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>Zipf's Law Analyzer</h3>
-                <p>
-                    A statistical analysis toolkit to validate Zipf's Law on an English corpus (~100k words) with automated data collection, frequency analysis, and interactive web visualization. The project validates that word frequency is inversely proportional to rank in natural language. Features include automated corpus download from diverse sources (Bible, science, sports, fiction), log-log slope analysis, coverage analysis for vocabulary comprehension, and co-occurrence network visualization.
-                    <br><strong>Technologies:</strong> Python, Flask, Pandas, NumPy, Jinja2.
-                </p>
-                <a href="https://github.com/xhamera1/Zipf-s-law-for-natural-language" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>Kraków Tram Lines Simulator (Collaborative)</h3>
-                <p>
-                    A real-time simulation and visualization of the Kraków tram network. The application fetches real-time data and schedule information to simulate tram movements on an interactive map. Features include real-time simulation controls (pause, resume, restart, speed adjustment), interactive map visualization with Leaflet.js showing tram lines, stops, and live positions, and automated data fetching from official sources. (Collaborative)
-                    <br><strong>Technologies:</strong> Python, FastAPI, JavaScript, HTML, CSS, Leaflet.js, WebSocket.
-                </p>
-                <a href="https://github.com/karolbystrek/krakow-tram-lines-simulator" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
-
-            <div class="project-item card">
-                <h3>Chubby Programming Language (Collaborative)</h3>
-                <p>
-                   An ongoing collaborative project focused on developing a compiler for a custom programming language targeting the Java Virtual Machine (JVM). Utilizes Java and the ANTLR4 parser generator for lexical analysis and parsing. Explores concepts of compiler construction and language design. (Collaborative)
-                   <br><strong>Technologies:</strong> Java, ANTLR4, JVM.
-                </p>
-                <a href="https://github.com/karolbystrek/Chubby" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View on GitHub
-                </a>
-            </div>
+            <section class="projects-section" id="featured-section" aria-labelledby="featured-heading">
+                <div class="projects-section-header">
+                    <h2 id="featured-heading">Highlighted Projects</h2>
+                    <p>Selected work representing the strongest and most representative projects.</p>
+                </div>
+                <div id="projects-featured-grid" class="projects-grid projects-grid--featured"></div>
+            </section>
 
             
 
-             </main>
+            <section class="projects-section" id="all-projects-section" aria-labelledby="all-heading">
+                <div class="projects-section-header">
+                    <h2 id="all-heading">All Projects</h2>
+                    <p>
+                        Showing <span id="projects-visible-count" class="projects-count">0</span>
+                        of <span class="projects-count">19</span> projects
+                    </p>
+                </div>
+                <div id="filter-bar" class="filter-bar" role="toolbar" aria-label="Filter projects by technology"></div>
+                <div id="projects-all-grid" class="projects-grid"></div>
+                <p id="projects-no-results" class="no-results">No projects match this filter. Try another category.</p>
+            </section>
+        </main>
 
-         <footer class="footer">
-             &copy; 2025 Patryk Chamera </footer>
-
+        <footer class="footer">&copy; 2026 Patryk Chamera</footer>
     </div>
+
+    <script src="projects-data.js"></script>
+    <script src="projects.js"></script>
+    <script>
+        initProjectsPage({ showFeatured: true, defaultFilter: 'all', hubPath: 'projects.html', categoryPrefix: 'projects/' });
+    </script>
 </body>
 </html>
