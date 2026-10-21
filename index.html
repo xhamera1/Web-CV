@@ -3,212 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patryk Chamera CV</title>
+    <meta name="description" content="CV of Patryk Chamera, Software Quality Assurance Engineer and Computer Science student at AGH University of Krakow.">
+    <title>Patryk Chamera — CV</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
+    <div class="cv-page">
+        <header class="profile-header">
+            <div class="profile-copy">
+                <p class="eyebrow">Software Engineer</p>
+                <h1>Patryk Chamera</h1>
+                <p class="headline">4th-year Computer Science and Intelligent Systems student at AGH University,
+passionate about designing, building, and testing reliable backend software.
+</p>
 
-    <div class="container">
-        <header class="header">
-            <div class="profile-photo-wrapper">
-                <img src="photo/cv zdjecie Patryk Chamera.jpeg" alt="Zdjęcie Patryka Chamery" class="profile-photo" onerror="this.onerror=null; this.src='https://placehold.co/120x120/e2e8f0/334155?text=Photo';">
+                <ul class="contact-list" aria-label="Contact details">
+                    <li>Krakow, Poland</li>
+                    <li><a href="tel:+48536330101">+48 536 330 101</a></li>
+                    <li><a href="mailto:chamerapatryk@gmail.com">chamerapatryk@gmail.com</a></li>
+                    <li><a href="https://github.com/xhamera1" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/patryk-chamera-309835289/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
             </div>
-            <div class="header-text">
-                <h1>PATRYK CHAMERA</h1>
-                <p>4th-year Computer Science and Intelligent Systems Student | Software QA Engineer I at Aven Hospitality (previously Sabre Corporation)</p>
-            </div>
+
+            <img
+                src="photo/cv zdjecie Patryk Chamera.jpeg"
+                alt="Portrait of Patryk Chamera"
+                class="profile-photo"
+            >
         </header>
 
-        <div class="main-content">
-
-            <aside class="sidebar">
-                <section class="contact-section sidebar-section">
-                    <h2>CONTACT</h2>
-                    <ul>
-                        <li>
-                            <span>+48 536 330 101</span>
-                        </li>
-                        <li>
-                            <span>Krakow, Poland</span>
-                        </li>
-                        <li>
-                            <a href="mailto:chamerapatryk@gmail.com">chamerapatryk@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/xhamera1" target="_blank" rel="noopener noreferrer">github.com/xhamera1</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/patryk-chamera-309835289/" target="_blank" rel="noopener noreferrer">linkedin.com/in/patryk-chamera</a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="skills-section sidebar-section">
-                    <h2>SKILLS</h2>
-                    <div class="skills-list">
-                        <div class="skill-category">
-                            <h4>Programming:</h4>
-                            <p>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">C#</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">SQL</span>
-                                <span class="skill-tag">C++ (basic)</span>
-                                <span class="skill-tag">HTML/CSS/js</span>
-                            </p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frameworks & Libraries:</h4>
-                            <p>
-                                <span class="skill-tag">.NET</span>
-                                <span class="skill-tag">Spring Boot</span>
-                                <span class="skill-tag">React</span>
-                             </p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Databases:</h4>
-                            <p>
-                                <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">Oracle</span>
-                             </p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools & Platforms:</h4>
-                            <p>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Linux</span>
-                                <span class="skill-tag">SonarQube</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">SoapUI</span>
-                                <span class="skill-tag">Postman</span>
-                                <span class="skill-tag">Jenkins (CI/CD)</span>
-                                <span class="skill-tag">Jira</span>
-                                <span class="skill-tag">Rally</span>
-                                <span class="skill-tag">GCP</span>
-                                <span class="skill-tag">Splunk</span>
-                            </p>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Core Concepts:</h4>
-                             <p>
-                                <span class="skill-tag">SOLID principles</span>
-                                <span class="skill-tag">Data Structures</span>
-                                <span class="skill-tag">Algorithms</span>
-                                <span class="skill-tag">REST API design</span>
-                                <span class="skill-tag">Database management</span>
-                                <span class="skill-tag">Code quality & testing</span>
-                                <span class="skill-tag">Agile/Scrum</span>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="languages-section sidebar-section">
-                    <h2>LANGUAGES</h2>
-                    <ul>
-                        <li>English (B2)</li>
-                        <li>Polish (Native)</li>
-                    </ul>
-                </section>
-
-                 <section class="about-section sidebar-section">
-                    <h2>ABOUT ME</h2>
-                    <p>
-                        Outside of work and studies, I enjoy hiking, going to the gym, watching good movies, and exploring artificial intelligence.
+        <div class="cv-layout">
+            <main class="main-column">
+                <section class="cv-section" aria-labelledby="profile-heading">
+                    <h2 id="profile-heading">Profile</h2>
+                    <p class="profile-summary">
+                        Fourth-year Computer Science and Intelligent Systems student at AGH University of Krakow and a Software Quality Assurance Engineer. I work with API test automation in C# and support reliable releases through functional testing, CI/CD, and production rollout monitoring. My development background includes Java, C#, Python, full-stack projects.
                     </p>
                 </section>
-            </aside>
 
-            <main class="main-column">
-                <section class="main-section card fade-in" id="summary">
-                    <h2>SUMMARY</h2>
-                    <ul class="summary-list">
-                        <li>4th-year Computer Science and Intelligent Systems student at AGH University, passionate about designing, building, and testing reliable backend software.</li>
-                        <li>Software Quality Assurance Engineer focusing on API testing and test automation with C# in Agile/Scrum teams at Sabre and now at Aven Hospitality Solution.</li>
-                        <li>Experienced in both developing and testing software using Java, C#, and CI/CD tooling. I focus on writing reliable code and backing it up with solid automated test strategies to ensure high-quality releases.</li>
-                        <li>Outside of work and studies, I enjoy hiking, going to the gym, watching good movies, and exploring artificial intelligence.</li>
-                    </ul>
-                </section>
+                <section class="cv-section" aria-labelledby="experience-heading">
+                    <h2 id="experience-heading">Professional experience</h2>
 
-                <section class="main-section fade-in" id="experience">
-                    <h2>PROFESSIONAL EXPERIENCE</h2>
-                    <div class="job card">
-                        <div class="job-header">
-                            <h3>Software Quality Assurance Engineer I</h3>
-                            <span class="job-date">Nov 2025 – Present</span>
+                    <article class="timeline-entry">
+                        <div class="entry-heading">
+                            <div>
+                                <h3>Software Quality Assurance Engineer I</h3>
+                                <p class="organization">Aven Hospitality</p>
+                            </div>
+                            <p class="entry-date">Nov 2025 — Present</p>
                         </div>
-                        <p class="job-company">Aven Hospitality</p>
-                        <ul class="job-details">
-                            <li>Continue API automation in <strong>C#</strong> and <strong>SoapUI/Postman</strong>,<strong>Jira/Rally</strong> administration, and <strong>Agile/Scrum</strong> collaboration with broader quality ownership.</li>
-                            <li>Support <strong>CI/CD</strong> and <strong>Jenkins</strong>; take part in <strong>releases and cutovers</strong>, monitoring rollout health and go-live readiness with <strong>Splunk</strong>.</li>
-                            <li>Run demos for <strong>Product Owners</strong>, present features and product capabilities; communicate risks and release status to stakeholders.</li>
+                        <ul class="entry-details">
+                            <li>Develop API test automation in C# and perform functional API testing with SoapUI and Postman.</li>
+                            <li>Support CI/CD pipelines, releases, and cutovers using Jenkins, with rollout monitoring in Splunk.</li>
+                            <li>Present features to Product Owners and communicate quality risks and release readiness to stakeholders.</li>
                         </ul>
-                    </div>
-                    <div class="job card">
-                        <div class="job-header">
-                            <h3>Intern / Software Quality Assurance Engineer I</h3>
-                            <span class="job-date">Jul 2025 – Nov 2025</span>
+                    </article>
+
+                    <article class="timeline-entry">
+                        <div class="entry-heading">
+                            <div>
+                                <h3>Intern / Software Quality Assurance Engineer I</h3>
+                                <p class="organization">Sabre Hospitality Solutions</p>
+                            </div>
+                            <p class="entry-date">Jul 2025 — Nov 2025</p>
                         </div>
-                        <p class="job-company">Sabre Hospitality Solutions</p>
-                        <ul class="job-details">
-                            <li>Built API automation in <strong>SoapUI</strong> and <strong>C#</strong> under guidance of senior engineers in an <strong>Agile/Scrum</strong> team.</li>
-                            <li>Set up <strong>Jira</strong> and <strong>Rally</strong> pages, logged defects, and performed functional validation of hospitality platform APIs.</li>
+                        <ul class="entry-details">
+                            <li>Built API test automation in SoapUI and C# as part of an Agile/Scrum team.</li>
+                            <li>Performed functional validation of hospitality platform APIs, documented defects, and maintained project information in Jira and Rally.</li>
                         </ul>
-                    </div>
-                    <div class="job card">
-                        <div class="job-header">
-                            <h3>Customer Service Representative (Helpline)</h3>
-                            <span class="job-date">Summer 2023</span>
+                    </article>
+
+                    <article class="timeline-entry">
+                        <div class="entry-heading">
+                            <div>
+                                <h3>Customer Service Representative</h3>
+                                <p class="organization">Canal Plus</p>
+                            </div>
+                            <p class="entry-date">Summer 2023</p>
                         </div>
-                        <p class="job-company">Canal Plus</p>
                         <p>
-                            Provided technical and subscription support via phone and email, effectively diagnosing and resolving customer issues. This role honed my problem-solving and clear communication abilities in a fast-paced environment while ensuring customer satisfaction.
+                            Provided technical and subscription support by phone and email, diagnosing customer issues and explaining solutions clearly in a fast-paced environment.
                         </p>
-                    </div>
+                    </article>
                 </section>
 
-                <section class="main-section fade-in" id="education">
-                    <h2>EDUCATION</h2>
-                    <div class="education-item card">
-                         <div class="education-header">
-                            <h3>AGH University of Krakow</h3>
-                            <span class="education-date">October 2023 – Present</span>
+                <section class="cv-section" aria-labelledby="education-heading">
+                    <h2 id="education-heading">Education</h2>
+                    <article class="timeline-entry timeline-entry--compact">
+                        <div class="entry-heading">
+                            <div>
+                                <h3>AGH University of Krakow</h3>
+                                <p class="organization">Computer Science and Intelligent Systems</p>
+                            </div>
+                            <p class="entry-date">Oct 2023 — Present</p>
                         </div>
-                        <p class="education-degree">Computer Science and Intelligent Systems (3rd year)</p>
+                        <p>Fourth-year engineering degree student.</p>
+                    </article>
+                </section>
+
+                <section class="cv-section" aria-labelledby="projects-heading">
+                    <h2 id="projects-heading">Projects</h2>
+                    <div class="simple-row">
+                        <p>Backend, web, machine learning, and computer vision projects developed individually and in teams.</p>
+                        <a class="text-link" href="projects.html">View project portfolio <span aria-hidden="true">→</span></a>
                     </div>
                 </section>
 
-                <section class="main-section fade-in" id="projects">
-                    <h2>MY PROJECTS</h2>
-                    <div class="card projects-link-card">
-                        <p style="margin-top: 1rem;">Explore highlighted projects, filter by technology (Java, Python, AI/ML, and more), or browse dedicated category pages.</p>
-                        <a href="projects.html" class="button-link" style="display: inline-flex; margin-top: 0.5rem;">
-                            View My Projects
-                        </a>
-                    </div>
+                <section class="cv-section" aria-labelledby="certification-heading">
+                    <h2 id="certification-heading">Certification</h2>
+                    <article class="timeline-entry timeline-entry--compact">
+                        <div class="entry-heading">
+                            <div>
+                                <h3>Amazon Junior Software Developer Professional Certificate</h3>
+                                <p class="organization">Amazon · Coursera</p>
+                            </div>
+                            <a class="text-link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/NED8K1HZ4HJP" target="_blank" rel="noopener noreferrer">Verify credential</a>
+                        </div>
+                    </article>
                 </section>
-
-                <section class="main-section fade-in" id="courses">
-                    <h2>CERTIFICATIONS</h2>
-                    <div class="certification-item card">
-                        <h3>Amazon Junior Software Developer Professional Certificate</h3>
-                        <p class="certification-provider">Issued by Amazon</p>
-                        <p>
-                           <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/NED8K1HZ4HJP" target="_blank" rel="noopener noreferrer" class="button-link" style="display: inline-flex; margin-top: 0.5rem;">Verify credential</a>
-                        </p>
-                    </div>
-                </section>
-
-                
             </main>
+
+            <aside class="sidebar" aria-label="Additional information">
+                <section class="sidebar-section" aria-labelledby="skills-heading">
+                    <h2 id="skills-heading">Technical skills</h2>
+
+                    <div class="skill-group">
+                        <h3>Programming</h3>
+                        <p>Java, C#, Python, SQL, C++, JavaScript, HTML, CSS</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Frameworks</h3>
+                        <p>.NET, Spring Boot, React</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MySQL, Oracle</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Testing & quality</h3>
+                        <p>API testing, test automation, SoapUI, Postman, SonarQube</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Tools & platforms</h3>
+                        <p>Git, Linux, Docker, Jenkins, Jira, Rally, GCP, Splunk</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Engineering</h3>
+                        <p>REST APIs, SOLID, data structures, algorithms, CI/CD, Agile/Scrum</p>
+                    </div>
+                </section>
+
+                <section class="sidebar-section" aria-labelledby="languages-heading">
+                    <h2 id="languages-heading">Languages</h2>
+                    <dl class="language-list">
+                        <div>
+                            <dt>Polish</dt>
+                            <dd>Native</dd>
+                        </div>
+                        <div>
+                            <dt>English</dt>
+                            <dd>B2</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="sidebar-section" aria-labelledby="interests-heading">
+                    <h2 id="interests-heading">Interests</h2>
+                    <p>Hiking, strength training, film, and artificial intelligence.</p>
+                </section>
+            </aside>
         </div>
 
         <footer class="footer">
-            I hereby consent to the processing of my personal data included in this application for the purposes of the recruitment process under the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (GDPR).
+            I hereby consent to the processing of my personal data included in this application for the purposes of the recruitment process under Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (GDPR).
         </footer>
-
     </div>
-
-    </body>
+</body>
 </html>

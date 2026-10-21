@@ -145,7 +145,7 @@
             link.innerHTML = `
                 <span class="cat-icon">${category.icon}</span>
                 <span>${category.label}</span>
-                <span class="cat-count">${count} projects</span>
+                <span class="cat-count">${count} ${count === 1 ? 'project' : 'projects'}</span>
             `;
             container.appendChild(link);
         });
