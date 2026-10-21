@@ -300,6 +300,24 @@ body {
     font-weight: 600;
 }
 
+.summary-list {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.summary-list li {
+    padding-left: 0.25rem;
+    color: var(--text-medium);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.summary-list li::marker {
+    color: var(--primary-accent);
+}
+
 /* Courses & Certifications Specifics */
 .certification-item h3 {
      font-size: 1.15rem;
